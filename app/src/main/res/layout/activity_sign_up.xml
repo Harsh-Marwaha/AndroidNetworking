@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/edtFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="First Name"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/form_bg"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:textColorHint="#C2C2C2"
+        android:textColor="@color/white"
+        />
+
+
+    <EditText
+        android:id="@+id/edtLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Last Name"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtFirstName"
+        android:background="@drawable/form_bg"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:textColorHint="#C2C2C2"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="User Name"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtLastName"
+        android:background="@drawable/form_bg"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:textColorHint="#C2C2C2"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtUserName"
+        android:background="@drawable/form_bg"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:textColorHint="#C2C2C2"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtEmail"
+        android:background="@drawable/form_bg"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:inputType="textPassword"
+        android:textColorHint="#C2C2C2"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/edtMobileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtPassword"
+        android:background="@drawable/form_bg"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:maxLength="10"
+        android:inputType="number"
+        android:textColorHint="#C2C2C2"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/edtCountryCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="CountryCode"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtMobileNumber"
+        android:background="@drawable/form_bg"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:inputType="number"
+        android:textColorHint="#C2C2C2"
+        android:textColor="@color/white"/>
+
+    <Spinner
+        android:id="@+id/spinnerUserType"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtCountryCode"
+        android:background="@drawable/form_bg"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/spinnerUserType"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
